@@ -1,0 +1,12 @@
+//cmd=12002
+
+package pb;
+
+option java_package = "com.sixfoot.hrv.codec.protobuf";
+option java_outer_classname = "PBVector3Proto";
+
+message PBVector3 {
+	required int64 x = 1;
+	required int64 y = 2;
+	required int64 z = 3;
+}
