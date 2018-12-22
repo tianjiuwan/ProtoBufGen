@@ -1,0 +1,11 @@
+package pb;
+
+import "PBVector3.proto";
+
+option java_package = "com.sixfoot.hrv.codec.protobuf";
+option java_outer_classname = "SyncPlayerPosReqProto";
+
+message SyncPlayerPosReq {
+	required int64 playerId = 1;
+	required PBVector3 pos = 2;
+}
