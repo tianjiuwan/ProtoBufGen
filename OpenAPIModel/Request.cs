@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from: proto/Request.proto
+// Generated from: Request.proto
 namespace hrv
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"Request")]

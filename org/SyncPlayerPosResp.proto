@@ -1,11 +1,15 @@
 package pb;
 
 import "PBVector3.proto";
+import "PBVector2.proto";
 
 option java_package = "com.sixfoot.hrv.codec.protobuf";
 option java_outer_classname = "SyncPlayerPosRespProto";
 
 message SyncPlayerPosResp {
-	required int64 playerId = 1;
-	required PBVector3 pos = 2;
+	required int64 playerId = 1;//玩家id
+	required PBVector3 pos = 2;//玩家坐标
+	required PBVector2 dir = 3;//移动方向
+	required int64 speed = 4;//移动速度 <=0 停止
+	required int64 utcTime = 5;//时间戳
 }

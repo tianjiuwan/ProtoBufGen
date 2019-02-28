@@ -3,10 +3,9 @@
 package pb;
 
 option java_package = "com.sixfoot.hrv.codec.protobuf";
-option java_outer_classname = "PBVector3Proto";
+option java_outer_classname = "PBVector2Proto";
 
-message PBVector3 {
+message PBVector2 {
 	required int64 x = 1;//x分量 客户端*0.001
 	required int64 y = 2;//y分量 客户端*0.001
-	required int64 z = 3;//z分量 客户端*0.001
 }

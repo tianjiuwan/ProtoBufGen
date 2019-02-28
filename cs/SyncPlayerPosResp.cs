@@ -9,6 +9,7 @@
 
 // Generated from: org/SyncPlayerPosResp.proto
 // Note: requires additional types generated from: PBVector3.proto
+// Note: requires additional types generated from: PBVector2.proto
 namespace pb
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"SyncPlayerPosResp")]
@@ -29,6 +30,27 @@ namespace pb
     {
       get { return _pos; }
       set { _pos = value; }
+    }
+    private pb.PBVector2 _dir;
+    [global::ProtoBuf.ProtoMember(3, IsRequired = true, Name=@"dir", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector2 dir
+    {
+      get { return _dir; }
+      set { _dir = value; }
+    }
+    private long _speed;
+    [global::ProtoBuf.ProtoMember(4, IsRequired = true, Name=@"speed", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public long speed
+    {
+      get { return _speed; }
+      set { _speed = value; }
+    }
+    private long _utcTime;
+    [global::ProtoBuf.ProtoMember(5, IsRequired = true, Name=@"utcTime", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public long utcTime
+    {
+      get { return _utcTime; }
+      set { _utcTime = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)

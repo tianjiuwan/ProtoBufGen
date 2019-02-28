@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from: proto/LoginReq.proto
+// Generated from: LoginReq.proto
 // Note: requires additional types generated from: Request.proto
 namespace hrv
 {

@@ -9,6 +9,7 @@
 
 // Generated from: org/PlayerInfoMsg.proto
 // Note: requires additional types generated from: PBVector3.proto
+// Note: requires additional types generated from: PBVector2.proto
 namespace pb
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"PlayerInfoMsg")]
@@ -30,12 +31,68 @@ namespace pb
       get { return _name; }
       set { _name = value; }
     }
-    private pb.PBVector3 _pos;
-    [global::ProtoBuf.ProtoMember(3, IsRequired = true, Name=@"pos", DataFormat = global::ProtoBuf.DataFormat.Default)]
-    public pb.PBVector3 pos
+    private string _resName;
+    [global::ProtoBuf.ProtoMember(3, IsRequired = true, Name=@"resName", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public string resName
+    {
+      get { return _resName; }
+      set { _resName = value; }
+    }
+    private pb.PBVector2 _pos;
+    [global::ProtoBuf.ProtoMember(4, IsRequired = true, Name=@"pos", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector2 pos
     {
       get { return _pos; }
       set { _pos = value; }
+    }
+    private pb.PBVector2 _moveBox;
+    [global::ProtoBuf.ProtoMember(5, IsRequired = true, Name=@"moveBox", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector2 moveBox
+    {
+      get { return _moveBox; }
+      set { _moveBox = value; }
+    }
+    private long _height;
+    [global::ProtoBuf.ProtoMember(6, IsRequired = true, Name=@"height", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public long height
+    {
+      get { return _height; }
+      set { _height = value; }
+    }
+    private long _speed;
+    [global::ProtoBuf.ProtoMember(7, IsRequired = true, Name=@"speed", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public long speed
+    {
+      get { return _speed; }
+      set { _speed = value; }
+    }
+    private long _jumpSpeed;
+    [global::ProtoBuf.ProtoMember(8, IsRequired = true, Name=@"jumpSpeed", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public long jumpSpeed
+    {
+      get { return _jumpSpeed; }
+      set { _jumpSpeed = value; }
+    }
+    private pb.PBVector3 _scale;
+    [global::ProtoBuf.ProtoMember(9, IsRequired = true, Name=@"scale", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector3 scale
+    {
+      get { return _scale; }
+      set { _scale = value; }
+    }
+    private int _roleType;
+    [global::ProtoBuf.ProtoMember(10, IsRequired = true, Name=@"roleType", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int roleType
+    {
+      get { return _roleType; }
+      set { _roleType = value; }
+    }
+    private pb.PBVector2 _hitBox;
+    [global::ProtoBuf.ProtoMember(11, IsRequired = true, Name=@"hitBox", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector2 hitBox
+    {
+      get { return _hitBox; }
+      set { _hitBox = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)

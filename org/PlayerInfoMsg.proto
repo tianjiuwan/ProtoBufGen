@@ -1,12 +1,21 @@
 package pb;
 
 import "PBVector3.proto";
+import "PBVector2.proto";
 
 option java_package = "com.sixfoot.hrv.codec.protobuf";
 option java_outer_classname = "PlayerInfoMsgProto";
 
 message PlayerInfoMsg {
-	required int64 playerId = 1;
-	required string name = 2;
-	required PBVector3 pos = 3;
+	required int64 playerId = 1;//玩家uid
+	required string name = 2;//昵称
+	required string resName = 3;//资源名
+	required PBVector2 pos = 4;//位置
+	required PBVector2 moveBox = 5;//移动盒
+	required int64 height = 6;//客户端 *0.001
+	required int64 speed = 7;//客户端 *0.001
+	required int64 jumpSpeed = 8;//客户端 *0.001
+	required PBVector3 scale = 9;//缩放
+	required int32 roleType = 10;//实体类型 客户端转枚举
+	required PBVector2 hitBox = 11;//受击盒
 }

@@ -1,9 +1,0 @@
-package pb;
-
-option java_package = "com.sixfoot.hrv.codec.protobuf";
-option java_outer_classname = "PlayerSnapShootMsgProto";
-
-message PlayerSnapShootMsg {
-	required string username = 1;
-	optional int32 playerId = 2;
-}
