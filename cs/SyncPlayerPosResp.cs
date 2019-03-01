@@ -52,6 +52,15 @@ namespace pb
       get { return _utcTime; }
       set { _utcTime = value; }
     }
+
+    private int _isKnock = default(int);
+    [global::ProtoBuf.ProtoMember(6, IsRequired = false, Name=@"isKnock", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int isKnock
+    {
+      get { return _isKnock; }
+      set { _isKnock = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }

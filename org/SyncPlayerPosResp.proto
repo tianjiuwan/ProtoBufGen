@@ -12,4 +12,5 @@ message SyncPlayerPosResp {
 	required PBVector2 dir = 3;//移动方向
 	required int64 speed = 4;//移动速度 <=0 停止
 	required int64 utcTime = 5;//时间戳
+	optional int32 isKnock = 6;//是否撞墙
 }
