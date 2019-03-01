@@ -18,4 +18,5 @@ message PlayerInfoMsg {
 	required PBVector3 scale = 9;//缩放
 	required int32 roleType = 10;//实体类型 客户端转枚举
 	required PBVector2 hitBox = 11;//受击盒
+	required int32 lookFlag = 12;//面向
 }

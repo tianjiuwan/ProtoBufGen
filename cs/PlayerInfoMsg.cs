@@ -94,6 +94,13 @@ namespace pb
       get { return _hitBox; }
       set { _hitBox = value; }
     }
+    private int _lookFlag;
+    [global::ProtoBuf.ProtoMember(12, IsRequired = true, Name=@"lookFlag", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int lookFlag
+    {
+      get { return _lookFlag; }
+      set { _lookFlag = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
