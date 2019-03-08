@@ -1,11 +1,14 @@
 package pb;
 
+import "PBVector3.proto";
+
 option java_package = "com.sixfoot.hrv.codec.protobuf";
 option java_outer_classname = "SkillBroadHitMsgProto";
 
 message SkillBroadHitMsg {
-	required int64 playerId = 1;//玩家uid
+	required int64 playerId = 1;//玩家uid 释放者
     required int32 skillId = 2;//技能id
 	required int32 hitId = 3;//受击配置
-	repeated int64 hiters = 4;//攻击到的敌人
+	required PBVector3 pos = 4;//释放技能位置
+	repeated int64 hiters = 5;//攻击到的敌人
 }

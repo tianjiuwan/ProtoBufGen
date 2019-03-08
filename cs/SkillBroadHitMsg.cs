@@ -8,6 +8,7 @@
 //------------------------------------------------------------------------------
 
 // Generated from: org/SkillBroadHitMsg.proto
+// Note: requires additional types generated from: PBVector3.proto
 namespace pb
 {
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"SkillBroadHitMsg")]
@@ -36,8 +37,15 @@ namespace pb
       get { return _hitId; }
       set { _hitId = value; }
     }
+    private pb.PBVector3 _pos;
+    [global::ProtoBuf.ProtoMember(4, IsRequired = true, Name=@"pos", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    public pb.PBVector3 pos
+    {
+      get { return _pos; }
+      set { _pos = value; }
+    }
     private readonly global::System.Collections.Generic.List<long> _hiters = new global::System.Collections.Generic.List<long>();
-    [global::ProtoBuf.ProtoMember(4, Name=@"hiters", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::ProtoBuf.ProtoMember(5, Name=@"hiters", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
     public global::System.Collections.Generic.List<long> hiters
     {
       get { return _hiters; }
