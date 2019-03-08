@@ -1,0 +1,9 @@
+package pb;
+
+option java_package = "com.sixfoot.hrv.codec.protobuf";
+option java_outer_classname = "PlayerLivingStateMsgProto";
+
+message PlayerLivingStateMsg {
+	required int64 playerId = 1;//玩家uid
+	required int32 state = 2;//状态 1移除
+}
