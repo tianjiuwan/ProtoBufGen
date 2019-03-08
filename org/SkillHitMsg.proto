@@ -1,0 +1,11 @@
+package pb;
+
+option java_package = "com.sixfoot.hrv.codec.protobuf";
+option java_outer_classname = "SkillHitMsgProto";
+
+message SkillHitMsg {
+	required int64 playerId = 1;//玩家uid
+    required int32 skillId = 2;//技能id
+	required int32 hitId = 3;//受击配置
+	repeated int64 hiters = 4;//攻击到的敌人
+}
